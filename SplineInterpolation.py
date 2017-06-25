@@ -10,4 +10,7 @@ import csv
 with open('data4spl.csv', newline='') as csvFileObj:
     readerObj = csv.reader(csvFileObj)
     for row in readerObj:
-        print (row)
+        rawData = list(readerObj)
+
+print(rawData)
+        
